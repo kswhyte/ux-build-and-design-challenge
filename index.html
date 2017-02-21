@@ -3,15 +3,41 @@
   <head>
     <meta charset="utf-8">
     <title>Fabulous Fitness</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/main.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,700" rel="stylesheet">
 
   </head>
 
   <body>
-    <div class="goal-circle-container">
-      <div class="goal-circle"></div>
-    </div>
+    <header id="header">
+      <h1><span id="fabulous">Fabulous</span> Fitness</h1>
+    </header>
+
+    <section class="steps-minute-tracker">
+      <div class="goal-container">
+        <div class="goal-circle"></div>
+        <div class="exercise-inputs"></div>
+      </div>
+
+    </section>
+
+    <section class="calorie-goal-tracker">
+        <h3 class="c-and-g-tracker">Calorie and Goal Tracker</h3>
+
+<!--  <label for="Food Input">
+        <input type="text" placeholder="Food Input" value="">
+      </label>
+      <label for="Exercise Input">
+        <input type="text" placeholder="Exercise Input" value="">
+      </label> -->
+      <div class="goal-bar"></div>
+    </section>
+
+    <section class"calendar-container">
+      <h3 class="meet-goals-text">Did you Meet Your Goals this Month?</h3>
+      <div class="calendar"></div>
+    </section>
 
   </body>
 </html>
