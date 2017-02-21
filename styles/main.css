@@ -1,0 +1,102 @@
+/*font-family: 'Open Sans', sans-serif;*/
+#header {
+  display: flex;
+  background-color: #4F6367;
+}
+
+body {
+  /*background-color: #B8D8D8;*/
+  font-family: 'Open Sans', sans-serif;
+}
+
+.steps-minute-tracker {
+  background-color: #B8D8D8;
+}
+
+.goal-container {
+  padding: 80px 50px 0 50px;
+  display: flex;
+  justify-content: center;
+  /*width: 200px;
+  height: 200px;
+  border: 20px solid #FE5F55;
+  border-radius:50%;
+  position: relative;
+  padding: 2rem;
+  box-shadow:
+    0 0 0 1px black,
+    inset 0 0 0 1px black,
+    inset 0 0 1px black,
+    0 0 1px black;*/
+}
+
+.goal-circle {
+  background: url('../images/Ring.png') no-repeat;
+  background-size: 300px;
+  width: 300px;
+  height: 300px;
+  margin: 0 40px;
+}
+
+.exercise-inputs {
+  background: url('../images/Exercise-Inputs.png') no-repeat;
+  background-size: 400px;
+  width: 400px;
+  height: 400px;
+  margin: 0 40px;
+}
+
+h1 {
+  font-size: 78px;
+  text-align: center;
+  margin: 30px auto;
+  color: #EEF5DB;
+}
+
+#fabulous {
+  color: #FE5F55;
+}
+
+.calorie-goal-tracker {
+  background-color: #7A9E9F;
+  color: #4F6367;
+}
+
+.c-and-g-tracker {
+  text-align: center;
+  color: #4F6367;
+  font-size: 40px;
+  padding: 20px 40px;
+}
+
+.goal-bar {
+  background: url('../images/Goal-Bar.png') no-repeat;
+  background-size: 700px;
+  width: 700px;
+  height: 250px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.calendar-container {
+  /*background-color: #4F6367;*/
+  background-color: #7A9E9F;
+  color: #4F6367;
+}
+
+.meet-goals-text {
+  color: #EEF5DB;
+  background-color: #4F6367;
+  font-weight: 300;
+}
+
+.calendar {
+  background: url('../images/Calendar.png') no-repeat;
+  background-size: 700px;
+  width: 700px;
+  height: 500px;
+  padding: 50px auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
