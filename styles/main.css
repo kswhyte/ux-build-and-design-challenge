@@ -227,4 +227,14 @@ h1 {
     height: 500px;
     width: 500px;
   }
+
+  .calendar {
+    background-size: 600px;
+    height: 500px;
+    width: 600px;
+  }
+
+  #header {
+    height: 120px;
+  }
 }
