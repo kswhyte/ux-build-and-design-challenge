@@ -1,102 +1,230 @@
 /*font-family: 'Open Sans', sans-serif;*/
 #header {
   display: flex;
+  height: 175px;
   background-color: #4F6367;
 }
 
 body {
-  /*background-color: #B8D8D8;*/
+  background-color: #4F6367;
   font-family: 'Open Sans', sans-serif;
 }
 
-.steps-minute-tracker {
-  background-color: #B8D8D8;
-}
-
-.goal-container {
-  padding: 80px 50px 0 50px;
-  display: flex;
-  justify-content: center;
-  /*width: 200px;
-  height: 200px;
-  border: 20px solid #FE5F55;
-  border-radius:50%;
-  position: relative;
-  padding: 2rem;
-  box-shadow:
-    0 0 0 1px black,
-    inset 0 0 0 1px black,
-    inset 0 0 1px black,
-    0 0 1px black;*/
-}
-
-.goal-circle {
-  background: url('../images/Ring.png') no-repeat;
-  background-size: 300px;
-  width: 300px;
-  height: 300px;
-  margin: 0 40px;
-}
-
-.exercise-inputs {
-  background: url('../images/Exercise-Inputs.png') no-repeat;
-  background-size: 400px;
-  width: 400px;
-  height: 400px;
-  margin: 0 40px;
-}
-
 h1 {
-  font-size: 78px;
+  font-size: 86px;
   text-align: center;
-  margin: 30px auto;
-  color: #EEF5DB;
+  margin: auto;
+  color: #FE5F55;
 }
 
 #fabulous {
-  color: #FE5F55;
+  color: #EEF5DB;
+}
+
+.steps-goal-container {
+  position: relative;
+  padding: 45px 0;
+  display: flex;
+  justify-content: center;
+  background-color: #B8D8D8;
+  height: 450px;
+}
+
+.calorie-title {
+  position: absolute;
+  bottom: 20px;
+  right: 75px;
+  font-size: 45px;
+  color: #4F6367;
+}
+
+.goal-circle {
+  position: absolute;
+  left: 40px;
+  top: 50px;
+  background: url('../images/ring3.png') no-repeat;
+  background-size: 400px;
+  width: 400px;
+  height: 400px;
+}
+
+.exercise-inputs {
+  position: absolute;
+  right: 0;
+  top: 100px;
+  width: 52%;
+}
+
+.input-container {
+  display: block;
+}
+
+.input-field{
+  font-size: 32px;
+  padding-left: 25px;
+  height: 85px;
+  width: 275px;
+  background-color: #eef5db;
+  border-radius: 20px;
+  border: 3px solid #979797;
+  margin-right: 25px;
+}
+
+.goal-submit{
+  font-size: 32px;
+  color: #eef5db;
+  height: 85px;
+  width: 150px;
+  background-color: #7a9e9f;
+  border-radius: 20px;
+  border: 3px solid #979797;
+}
+
+.steps-min-radio {
+  height: 60px;
+  width: 75px;
+  border-radius: 100%;
+  border: 3px solid gray;
+  background-color: rgba(0, 0, 0, 0);
+  margin: 40px;
+}
+
+.steps-radio-container, .minutes-radio-container {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+}
+
+.steps-radio, .min-radio {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+}
+
+.text {
+  display: inline-block;
+  font-size: 30px;
+  margin: 0 35px;
+  color: #4F6367;
+}
+
+.radio-toggle {
+  background-color: #7a9e9f;
+  border: 2px solid #FE5F55;
 }
 
 .calorie-goal-tracker {
   background-color: #7A9E9F;
   color: #4F6367;
 }
-
-.c-and-g-tracker {
-  text-align: center;
-  color: #4F6367;
-  font-size: 40px;
-  padding: 20px 40px;
-}
-
+/* ----------------------------------------- */
 .goal-bar {
-  background: url('../images/Goal-Bar.png') no-repeat;
-  background-size: 700px;
-  width: 700px;
-  height: 250px;
-  margin: 0 auto;
+  height: 275px;
+  background-color: #7a9e9f;
+  text-align: center;
+}
+
+.food-input{
+  width: 175px;
+  height: 95px;
+  padding-left: 15px;
+}
+
+.exercise-input{
+  width: 250px;
+  height: 95px;
+  padding-left: 15px;
+}
+
+.goal-input-container{
   display: flex;
+  justify-content: center;
+  /*align-items: center;*/
 }
 
-.calendar-container {
-  /*background-color: #4F6367;*/
-  background-color: #7A9E9F;
-  color: #4F6367;
-}
-
-.meet-goals-text {
-  color: #EEF5DB;
-  background-color: #4F6367;
+.goal-text{
+  font-size: 40px;
   font-weight: 300;
+  display: inline-block;
+  color: #eef5db;
+  /*width: 55px;*/
+  margin: 30px 5px;
 }
+
+/* ------------------------------------------ */
 
 .calendar {
   background: url('../images/Calendar.png') no-repeat;
-  background-size: 700px;
-  width: 700px;
-  height: 500px;
+  background-size: 800px;
+  width: 800px;
+  height: 600px;
   padding: 50px auto;
   margin: auto;
+  margin-top: 80px;
   display: flex;
   justify-content: center;
+}
+
+@media (min-width: 1024px){
+  .steps-goal-container{
+    display: inline-block;
+    height: 78vh;
+    width: 40vw;
+    float: left;
+  }
+
+  .goal-bar{
+    display: inline-block;
+    width: 60vw;
+    float: right;
+  }
+
+
+  .exercise-inputs {
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  .steps-radio-container, .minutes-radio-container{
+    height: 200px;
+    width: 200px;
+    margin-top: 50px;
+    text-align: center;
+  }
+
+  .steps-radio-container{
+    float: left;
+    position: relative;
+  }
+
+  .minutes-radio-container{
+    float: right;
+  }
+
+  .input-container{
+    width: 45vw;
+    height: 78vh;
+    margin: 0;
+  }
+
+  .goal-submit{
+    display: none;
+  }
+
+  .update-field{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 125px;
+  }
+
+  .goal-circle{
+    left: 50%;
+    transform: translateX(-50%);
+    top: 300px;
+    background-size: contain;
+    height: 500px;
+    width: 500px;
+  }
 }

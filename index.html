@@ -5,7 +5,7 @@
     <title>Fabulous Fitness</title>
     <link rel="stylesheet" href="./styles/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300i,400,700" rel="stylesheet">
 
   </head>
 
@@ -14,30 +14,43 @@
       <h1><span id="fabulous">Fabulous</span> Fitness</h1>
     </header>
 
-    <section class="steps-minute-tracker">
-      <div class="goal-container">
-        <div class="goal-circle"></div>
-        <div class="exercise-inputs"></div>
-      </div>
+    <div class="steps-goal-container">
+      <section class="exercise-inputs">
+        <article class="steps-radio-container">
+          <p class="text steps">Steps</p>
+          <button type="button" class="steps-radio steps-min-radio radio-toggle"></button>
+        </article>
+        <article class="minutes-radio-container">
+          <p class="text minutes">Minutes</p>
+          <button type="button" class="min-radio steps-min-radio"></button>
+        </article>
+        <section class="input-container">
+          <input class="input-field update-field" type="text" placeholder="Update">
+          <button type="button" class="goal-submit">Submit</button>
+        </section>
+      </section>
+      <div class="goal-circle"></div>
+      <h3 class="calorie-title">Calorie and Goal Tracker</h3>
+    </div>
 
-    </section>
+    <div class="goal-bar">
+      <article class="goal-start">
+        <p class="goal-text">Start = 1800 cal</p>
+      </article>
 
-    <section class="calorie-goal-tracker">
-        <h3 class="c-and-g-tracker">Calorie and Goal Tracker</h3>
+      <section class="goal-input-container">
+        <input class="input-field food-input" type="text" placeholder="Food Input">
+        <p class="goal-text"> - 1000 </br> cal</p>
+        <input class="input-field exercise-input" type="text" placeholder="Exercise Input">
+        <p class="goal-text"> + 200 </br> cal</p>
+        <p class="goal-text"> = 1000 </br> cal</p>
+      </section>
 
-<!--  <label for="Food Input">
-        <input type="text" placeholder="Food Input" value="">
-      </label>
-      <label for="Exercise Input">
-        <input type="text" placeholder="Exercise Input" value="">
-      </label> -->
-      <div class="goal-bar"></div>
-    </section>
+      <section class="calendar-container">
+        <div class="calendar"></div>
+      </section>
+    </div>
 
-    <section class"calendar-container">
-      <h3 class="meet-goals-text">Did you Meet Your Goals this Month?</h3>
-      <div class="calendar"></div>
-    </section>
 
   </body>
 </html>
