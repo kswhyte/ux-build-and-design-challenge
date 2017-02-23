@@ -89,6 +89,18 @@ h1 {
   margin: 40px;
 }
 
+.steps-radio-container, .minutes-radio-container {
+  display: inline-block;
+  text-align: center;
+  width: 150px;
+}
+
+.steps-radio, .min-radio {
+  display: block;
+  margin: auto;
+  margin-top: 25px;
+}
+
 .text {
   display: inline-block;
   font-size: 30px;
